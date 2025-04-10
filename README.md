@@ -27,16 +27,14 @@ This project allows users to **Create, Read, Update, and Delete (CRUD)** employe
 ### Add Employee Form
 ![Screenshot](employee_crud/screenshot/Screenshot%20(22).png)
 
-### Employee List View
+### Delete Confirmation
 ![Screenshot](employee_crud/screenshot/Screenshot%20(23).png)
 
-### Edit Employee
+### Django Admin Panel
 ![Screenshot](employee_crud/screenshot/Screenshot%20(24).png)
-
-### Delete Confirmation
 ![Screenshot](employee_crud/screenshot/Screenshot%20(25).png)
 
-### Django Admin Panel
+### Django Admin Database
 ![Screenshot](employee_crud/screenshot/Screenshot%20(26).png)
 
 ## 🚀 How to Run
