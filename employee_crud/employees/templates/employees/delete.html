@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Employee</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .delete-box {
+            background-color: #2c2c2c;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn.danger {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .btn.danger:hover {
+            background-color: #c0392b;
+        }
+
+        .btn.cancel {
+            background-color: #95a5a6;
+            color: white;
+        }
+
+        .btn.cancel:hover {
+            background-color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="delete-box">
+        <h2>Are you sure you want to delete <br><em>{{ employee.name }}</em>?</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit" class="btn danger">Yes, Delete</button>
+            <a href="{% url 'emp_list' %}" class="btn cancel">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>
